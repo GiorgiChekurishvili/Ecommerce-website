@@ -4,11 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/layout/footer.css">
     <link rel="stylesheet" href="../css/layout/header.css">
     <link rel="stylesheet" href="../css/pages/cart.css">
 </head>
 <body>
-    
-</body>
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="">Home ></a>
+                <span>Cart</span>
+            </div>
+            <section class="cart-container">
+                <h1>YOUR CART</h1>
+                <div class="cart-content">
+                    <div class="cart-products-content">
+                        <div class="cart-product-card">
+                            <img src="../images/most-used-images/gradient graphic tshirt.png" alt="Gradient graphic t-shirt image">
+                            <div class="cart-product-details">
+                                <div class="cart-product-description">
+                                    <h5>Gradient Graphic T-shirt</h5>
+                                    <p><b>Size:</b> Large</p>
+                                    <p><b>Color:</b> White</p>
+                                    <h4>$145</h4>
+                                </div>
+                                <div class="product-settings">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <div class="quantity-selector">
+                                        <span id="minus">-</span>
+                                        <span id="quantity">1</span>
+                                        <span id="plus">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-product-card">
+                            <img src="../images/most-used-images/checkered-shirt.png" alt="Checkered shirt image">
+                            <div class="cart-product-details">
+                                <div class="cart-product-description">
+                                    <h5>Checkered Shirt</h5>
+                                    <p><b>Size:</b> Medium</p>
+                                    <p><b>Color:</b> Red</p>
+                                    <h4>$180</h4>
+                                </div>
+                                <div class="product-settings">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <div class="quantity-selector">
+                                        <span id="minus">-</span>
+                                        <span id="quantity">1</span>
+                                        <span id="plus">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-product-card">
+                            <img src="../images/most-used-images/jeans.png" alt="Skinny fit jeans image">
+                            <div class="cart-product-details">
+                                <div class="cart-product-description">
+                                    <h5>Skinny Fit Jeans</h5>
+                                    <p><b>Size:</b> Large</p>
+                                    <p><b>Color:</b> Blue</p>
+                                    <h4>$240</h4>
+                                </div>
+                                <div class="product-settings">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <div class="quantity-selector">
+                                        <span id="minus">-</span>
+                                        <span id="quantity">1</span>
+                                        <span id="plus">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-summary-content">
+                        <h3>Order Summary</h3>
+                        <div class="expenses">
+                            <div class="sub-expenses subtotal">
+                                <p>Subtotal</p>
+                                <h5>$565</h5>
+                            </div>
+                            <div class="sub-expenses discount">
+                                <p>Discount (-20%)</p>
+                                <h5>-$113</h5>
+                            </div>
+                            <div class="sub-expenses delivery-fee">
+                                <p>Delivery Fee</p>
+                                <h5>$15</h5>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+                            <h4>$467</h4>
+                        </div>
+                        <div class="promo-code">
+                            <input type="text" placeholder="Add promo code">
+                            <input type="submit" value="Apply">
+                        </div>
+                        <button>Go to Checkout <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </section>
+    </main>
 </html>

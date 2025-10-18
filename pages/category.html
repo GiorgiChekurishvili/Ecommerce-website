@@ -4,11 +4,350 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/layout/footer.css">
     <link rel="stylesheet" href="../css/layout/header.css">
     <link rel="stylesheet" href="../css/pages/category.css">
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="">Home ></a>
+                <span>T-shirts</span>
+            </div>
+            <div class="category-content">
+                <aside class="filters">
+                    <div class="filters-header">
+                        <span>Filters</span>
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <div class="product-categories">
+                        <div class="product-category-card">
+                            <span>T-shirts</span>
+                            <span>></span>
+                        </div>
+                        <div class="product-category-card">
+                            <span>Shorts</span>
+                            <span>></span>
+                        </div>
+                        <div class="product-category-card">
+                            <span>Shirts</span>
+                            <span>></span>
+                        </div>
+                        <div class="product-category-card">
+                            <span>Hoodie</span>
+                            <span>></span>
+                        </div>
+                        <div class="product-category-card">
+                            <span>Jeans</span>
+                            <span>></span>
+                        </div>
+                    </div>
+                    <div class="price-filter">
+                        <div class="price-header">
+                            <span>Price</span>
+                            <span class="arrow">⌃</span>
+                        </div>
+
+                        <div class="slider-container">
+                            <input type="range" min="0" max="500" value="50" id="minRange" class="range" />
+                            <input type="range" min="0" max="500" value="200" id="maxRange" class="range" />
+                        </div>
+
+                        <div class="price-values">
+                            <span id="minValue">$50</span>
+                            <span id="maxValue">$200</span>
+                        </div>
+                    </div>
+                    <div class="color-filter">
+                        <div class="color-header">
+                            <span>Colors</span>
+                            <span class="arrow">⌃</span>
+                        </div>
+                        <div class="colors-content">
+                            <input type="radio" name="color" id="green">
+                            <label for="green" class="color-circle green"></label>
+
+                            <input type="radio" name="color" id="red">
+                            <label for="red"class="color-circle red"></label>
+
+                            <input type="radio" name="color" id="yellow">
+                            <label for="yellow" class="color-circle yellow"></label>
+
+                            <input type="radio" name="color" id="orange">
+                            <label for="orange" class="color-circle orange"></label>
+
+                            <input type="radio" name="color" id="light-blue">
+                            <label for="light-blue" class="color-circle light-blue"></label>
+
+                            <input type="radio" name="color" id="blue" checked>
+                            <label for="blue" class="color-circle blue"></label>
+
+                            <input type="radio" name="color" id="purple">
+                            <label for="purple" class="color-circle purple"></label>
+
+                            <input type="radio" name="color" id="pink">
+                            <label for="pink" class="color-circle pink"></label>
+
+                            <input type="radio" name="color" id="white">
+                            <label for="white" class="color-circle white"></label>
+
+                            <input type="radio" name="color" id="black">
+                            <label for="black" class="color-circle black"></label>
+                        </div>
+                    </div>
+                    <div class="size-filter">
+                        <div class="size-header">
+                            <span>Size</span>
+                            <span class="arrow">⌃</span>
+                        </div>
+                        <div class="size-content">
+                            <input type="radio" name="size" id="xxs">
+                            <label for="xxs">XX-Small</label>
+
+                            <input type="radio" name="size" id="xs">
+                            <label for="xs">X-Small</label>
+
+                            <input type="radio" name="size" id="s">
+                            <label for="s">Small</label>
+
+                            <input type="radio" name="size" id="m">
+                            <label for="m">Medium</label>
+
+                            <input type="radio" name="size" id="l" checked>
+                            <label for="l">Large</label>
+
+                            <input type="radio" name="size" id="xl">
+                            <label for="xl">X-Large</label>
+
+                            <input type="radio" name="size" id="xxl">
+                            <label for="xxl">XX-Large</label>
+
+                            <input type="radio" name="size" id="3xl">
+                            <label for="3xl">3X-Large</label>
+
+                            <input type="radio" name="size" id="4xl">
+                            <label for="4xl">4X-Large</label>
+                        </div>                
+                    </div>
+                    <div class="dress-style-content">
+                        <div class="dress-style-content-card">
+                            <span>Casual</span>
+                            <span>></span>
+                        </div>
+                        <div class="dress-style-content-card">
+                            <span>Formal</span>
+                            <span>></span>
+                        </div>
+                        <div class="dress-style-content-card">
+                            <span>Party</span>
+                            <span>></span>
+                        </div>
+                        <div class="dress-style-content-card">
+                            <span>Party</span>
+                            <span>Gym</span>
+                        </div>
+                    </div>
+                    <button class="apply-filter-button">Apply Filter</button>
+                </aside>
+                <section class="products">
+                    <div class="products-header">
+                        <h3>Casual</h3>
+                        <div class="sort">
+                            <p>Showing 1-10 of 100 Products</p>
+                            <span>Sort By:</span>
+                            <span><b>Most Popular V</b></span>
+                        </div>
+                    </div>
+                    <div class="products-content">
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">
+                                <h5>Gradient Graphic T-shirt</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <span><p>3.5/5</p></span>
+                                </div>
+                                <h4>$145</h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">      
+                            <div class="product-card-details">
+                                <h5>Polo with Tipping Details</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <span><p>4.5/5</p></span>
+                                </div>
+                                <h4>$180</h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">        
+                                <h5>Black Striped T-shirt</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span><p>5.0/5</p></span>
+                                </div>
+                                <h4>
+                                    <span>$120</span>
+                                    <del>$150</del>
+                                    <span class="sale">-30%</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">    
+                                <h5>Skinny Fit Jeans</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <span><p>3.5/5</p></span>
+                                </div> 
+                                <h4>
+                                    <span>$240</span>
+                                    <del>$260</del>
+                                    <span class="sale">-20%</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">  
+                                <h5>Checkered Shirt</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <span><p>4.5/5</p></span>
+                                </div>
+                                <h4>$180</h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">   
+                                <h5>Sleeve Striped T-shirt</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <span><p>4.5/5</p></span>
+                                </div>
+                                <h4>
+                                    <span>$130</span>
+                                    <del>$160</del>
+                                    <span class="sale">-30%</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">
+                                <h5>Vertical Striped Shirt</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span><p>5.0/5</p></span>
+                                </div>
+                                <h4>
+                                    <span>$212</span>
+                                    <del>$232</del>
+                                    <span class="sale">-20%</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">
+                                <h5>Courage Graphic T-shirt</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span><p>4.0/5</p></span>
+                                </div>
+                                <h4>$145</h4>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="" alt="">
+                            <div class="product-card-details">
+                                <h5>Loose Fit Bermuda Shorts</h5>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span><p>3.0/5</p></span>
+                                </div>
+                                <h4>$80</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <button>
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous</span>
+                        </button>
+                        <div class="pagination">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">...</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                        </div>
+                        <button>
+                            <span>Next</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
