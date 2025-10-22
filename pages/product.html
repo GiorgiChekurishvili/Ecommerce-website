@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/layout/footer.css">
     <link rel="stylesheet" href="../css/layout/header.css">
     <link rel="stylesheet" href="../css/pages/product.css">
+    <link rel="stylesheet" href="../css/layout/stars.css">
+    <link rel="stylesheet" href="../css/layout/container.css">
+    <link rel="stylesheet" href="../css/layout/sale.css">
 </head>
 <body>
    <header>
@@ -77,6 +80,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>5.0/5</span>
                             </div>
                             <div class="main-product-price">
                                 <h3>
@@ -104,14 +108,23 @@
                         </div>
                         <div class="cart-selection">
                             <div class="quantity-selector">
-                                <span id="minus">-</span>
-                                <span id="quantity">1</span>
-                                <span id="plus">+</span>
+                                <span class="minus">-</span>
+                                <span class="quantity">1</span>
+                                <span class="plus">+</span>
                             </div>
                             <button class="add-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="details-tab">
+        <div class="container">
+            <div class="product-tabs">
+                <a href="#">Product Details</a>
+                <a href="#" class="active">Rating & Reviews</a>
+                <a href="#">FAQs</a>
             </div>
         </div>
     </section>
@@ -157,7 +170,7 @@
                                 <div class="circle"></div>
                             </div>
                         </div>
-                        <p>Posted on August 14, 2023</p>
+                        <p class="date">Posted on August 14, 2023</p>
                     </div>
                      <div class="main-product-ratings-card">
                         <div class="main-product-rating-author">
@@ -180,7 +193,7 @@
                                 <div class="circle"></div>
                             </div>
                         </div>
-                        <p>Posted on August 15, 2023</p>
+                        <p class="date">Posted on August 15, 2023</p>
                     </div>
                      <div class="main-product-ratings-card">
                         <div class="main-product-rating-author">
@@ -203,7 +216,7 @@
                                 <div class="circle"></div>
                             </div>
                         </div>
-                        <p>Posted on August 16, 2023</p>
+                        <p class="date">Posted on August 16, 2023</p>
                     </div>
                      <div class="main-product-ratings-card">
                         <div class="main-product-rating-author">
@@ -226,7 +239,7 @@
                                 <div class="circle"></div>
                             </div>
                         </div>
-                        <p>Posted on August 17, 2023</p>
+                        <p class="date">Posted on August 17, 2023</p>
                     </div>
                      <div class="main-product-ratings-card">
                         <div class="main-product-rating-author">
@@ -249,7 +262,7 @@
                                 <div class="circle"></div>
                             </div>
                         </div>
-                        <p>Posted on August 18, 2023</p>
+                        <p class="date">Posted on August 18, 2023</p>
                     </div>
                      <div class="main-product-ratings-card">
                         <div class="main-product-rating-author">
@@ -273,20 +286,20 @@
                                 <div class="circle"></div>
                             </div>
                         </div>
-                        <p>Posted on August 19, 2023</p>
+                        <p class="date">Posted on August 19, 2023</p>
                     </div>
                 </div>
                 <button class="load-more">Load More Reviews</button>
             </div>
         </div>
     </section>
-    <section class="more-products-section">
+    <section class="products-section">
         <div class="container">
-            <div class="more-products-content">
+            <div class="products-content">
                 <h2>YOU MIGHT ALSO LIKE</h2>
-                <div class="more-products-inner-content">
-                    <article class="more-products-inner-content-card">
-                            <img src="../images/product/might-like/blue polo shirt.png" alt="Blue and white polo shirt with contrast trims image">
+                <div class="products-inner-content">
+                    <article class="product-card">
+                            <img src="../images/product/products/blue polo shirt.png" alt="Blue and white polo shirt with contrast trims image">
                             <h5>Polo with Contrast Trims</h5>
                             <div class="rating">
                                 <div class="stars">
@@ -303,7 +316,7 @@
                                 <span class="sale">-20%</span>
                             </h4>
                     </article>                    
-                    <article class="more-products-inner-content-card">
+                    <article class="product-card">
                             <img src="../images/most-used-images/gradient graphic tshirt.png" alt="Gradient graphic t-shirt image">
                             <h5>Gradient Graphic T-shirt</h5>
                             <div class="rating">
@@ -317,7 +330,7 @@
                             </div>
                             <h4>$145</h4>
                     </article>                    
-                    <article class="more-products-inner-content-card">
+                    <article class="product-card">
                             <img src="../images/most-used-images/pink polo shirt.png" alt="Polo shirt with tipping details image">
                             <h5>Polo with Tipping Details</h5>
                             <div class="rating">
@@ -332,7 +345,7 @@
                             </div>
                             <h4>$180</h4>
                     </article>                    
-                    <article class="more-products-inner-content-card">
+                    <article class="product-card">
                             <img src="../images/most-used-images/black striped t-shirt.png" alt="Black striped t-shirt image">
                             <h5>Black Striped T-shirt</h5>
                             <div class="rating">
