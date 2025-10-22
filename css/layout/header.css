@@ -102,19 +102,3 @@ nav ul li a:hover{
 .utility-icons i{
     cursor: pointer;
 }
-
-@media (max-width: 768px) {
-
-    .main-header .container{
-        flex-direction: column;
-        gap: 15px;
-    }
-    .search-box{
-        width: 100%;
-    }
-    nav ul li {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    
-}
