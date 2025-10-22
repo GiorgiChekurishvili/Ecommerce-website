@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.top-bar{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.top-bar-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-bar-text{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.top-bar-text a{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.top-bar i{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 100px;
+}
+
+.main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.main-header-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-header h3{
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: 'Integral CF' bold;
+}
+.main-header-content a {
+    color: #000;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color: #555;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 450px;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 15px;
+}
+.search-box button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+.utility-icons{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.utility-icons i{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .main-header .container{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .search-box{
+        width: 100%;
+    }
+    nav ul li {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+}
